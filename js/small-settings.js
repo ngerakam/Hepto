@@ -48,12 +48,12 @@ function showSlides() {
 //   dots[slideIndex - 1].className += " active";
 // }
 
-// nav bar collapsable
-
-function classToggle() {
-  const navs = document.querySelectorAll(".nav-items");
-
-  navs.forEach((nav) => nav.classList.toggle("Navbar__ToggleShow"));
+function myFunction() {
+  var x = document.getElementById("unordered");
+  if (x.children)
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
 }
-
-document.querySelector(".navbar-toggle").addEventListener("click", classToggle);
