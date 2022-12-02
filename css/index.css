@@ -84,7 +84,7 @@ img {
 
 /* Header section */
 .top {
-  background-image: url("../images/individual.jpeg");
+  background-image: url("../images/stock-photo.jpg");
   height: 400px;
 }
 
@@ -287,12 +287,61 @@ img {
 .edu .container img {
   width: 100%;
 }
+.edu .card .btn {
+  background-color: var(--light-orange-color);
+  color: #fff;
+  align-items: center;
+}
+.edu .grid > *:first-child {
+  grid-column: 1 / span 2;
+}
+
+.edu .grid > *:nth-child(4) {
+  grid-column: 1 / span 2;
+}
 
 /* End of Education */
 
-/* Donate */
+/* Contact */
 
-/* End of Donate */
+.contact .grid {
+  align-items: flex-start;
+}
+
+.contact .card .form-control {
+  margin: 30px 0;
+}
+
+.contact .card textarea {
+  padding: 40px;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  border-bottom: 1px solid #000000;
+}
+
+.contact .card input[type="text"],
+.contact .card input[type="email"] {
+  border: 0;
+  border-radius: 5px;
+  border-bottom: 1px solid #000000;
+  width: 100%;
+  height: 30px;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.contact .container h1,
+.contact .card h3 {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.contact .card p {
+  font-weight: bold;
+}
+
+/* End of Contact */
 
 /* Footer */
 
@@ -337,8 +386,10 @@ img {
 /* Tablets and under */
 @media (max-width: 768px) {
   .prog .grid,
+  .contact .grid,
   .mission .grid,
-  .middle .container {
+  .middle .container,
+  .footer .grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;

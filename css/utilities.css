@@ -169,6 +169,7 @@
 .btn-absolute,
 .bg-absolute {
   background-color: var(--light-orange-color);
+  color: #fff;
 }
 
 .btn-absolute {
