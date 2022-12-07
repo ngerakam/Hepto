@@ -421,6 +421,15 @@ img {
 
 /* Mobile */
 @media (max-width: 500px) {
+  .prog .grid,
+  .contact .grid,
+  .mission .grid,
+  .middle .container,
+  .footer .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
   .navbar {
     height: fit-content;
     overflow: hidden;
