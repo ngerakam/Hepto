@@ -278,6 +278,17 @@ img {
 
 /* Education */
 
+.edu .blog-container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+
+}
+
+.edu .card {
+  background-color: var(--light-grey-color);
+}
+
 .edu h1 {
   margin-left: 170px;
   font-weight: bold;
@@ -292,6 +303,7 @@ img {
   color: #fff;
   align-items: center;
 }
+
 .edu .grid > *:first-child {
   grid-column: 1 / span 2;
 }
@@ -343,6 +355,78 @@ img {
 
 /* End of Contact */
 
+
+/* Signle-post section */
+
+.post .container-fluid {
+  padding: 14px;
+}
+
+.post .grid {
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+}
+
+.post .card {
+  background-color: var(--light-grey-color);
+}
+
+.post h1 {
+  font-size: xx-large;
+  font-weight: bold;
+
+}
+.post p {
+  line-height: 2.4;
+}
+
+  /* side bar  */
+
+  .li-sidebar-search-form .li-search-field {
+    width: calc(100% - 50px);
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    color: #666666;
+    font-size: 14px;
+    height: 50px;
+    float: left;
+    text-transform: capitalize;
+  }
+  .li-sidebar-search-form .li-search-field {
+    width: calc(100% - 50px);
+    border: 1px solid #e1e1e1;
+    padding: 0 10px;
+    color: #242424;
+    font-size: 14px;
+    height: 50px;
+    float: left;
+    text-transform: capitalize;
+    background: #ffffff;
+  }
+  .li-sidebar-search-form .li-search-btn {
+    width: 50px;
+    height: 50px;
+    margin-left: -4px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    border: 1px solid #e1e1e1;
+  }
+  .li-sidebar-search-form .li-search-btn i {
+    font-size: 20px;
+    line-height: 50px;
+    color: #242424;
+    transition: all 0.3s ease-in-out;
+  }
+  .li-sidebar-search-form .li-search-btn:hover i {
+    color: #fed700;
+  }
+
+
+  
+
+/* End of Single post section */
+
 /* Footer */
 
 .footer img {
@@ -389,7 +473,7 @@ img {
   .contact .grid,
   .mission .grid,
   .mid-level .grid,
-  .about .grid,
+  .post .container-fluid,
   .middle .container,
   .footer .grid {
     display: grid;
@@ -423,17 +507,7 @@ img {
 
 /* Mobile */
 @media (max-width: 500px) {
-  .prog .grid,
-  .contact .grid,
-  .mission .grid,
-  .about .grid,
-  .mid-level .grid,
-  .middle .container,
-  .footer .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
+ 
   .navbar {
     height: fit-content;
     overflow: hidden;
